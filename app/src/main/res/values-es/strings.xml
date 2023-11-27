@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">First Android</string>
+    <string name="help">Ayuda</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Menú</string>
+    <string name="second_fragment_label">Partido</string>
+    <string name="next">Empezar</string>
+    <string name="previous">Previo</string>
+    <string name="settings">
+        Configuración
+    </string>
+    <string name="lorem_ipsum">
+        Rastreador de tenis
+    </string>
+</resources>
