@@ -1,5 +1,6 @@
 package com.example.firstandroid;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -21,7 +22,9 @@ import com.example.firstandroid.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.TextView;
+import com.example.firstandroid.Pop.*;
+
+import org.intellij.lang.annotations.Language;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -40,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+
+
 
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
+            
         });
+
 
 
         
@@ -60,16 +68,15 @@ public class MainActivity extends AppCompatActivity {
     }
     public void showSettings(MenuItem item) {
 
-        startActivity(new Intent(MainActivity.this,Pop.class));
+        Intent intent = new Intent(MainActivity.this,Pop.class);
+        startActivity(intent);
+
+
     }
-
-
-
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
 
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -97,4 +104,5 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 }
