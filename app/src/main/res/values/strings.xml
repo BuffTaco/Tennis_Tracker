@@ -12,5 +12,7 @@
     <string name="lorem_ipsum">
         Tennis Tracker
     </string>
+    <string name="help_info">
+        Face camera towards tennis court to set parameters, then press “Start” to run the app and set the court dimensions.</string>
 
 </resources>

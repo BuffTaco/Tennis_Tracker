@@ -26,12 +26,33 @@ public class Pop extends Activity{
         getWindow().setLayout((int)(width*.8),(int)(height*.7));
         LanguageManager lang = new LanguageManager(this);
         Button es = findViewById(R.id.btn_es);
+        Button en = findViewById(R.id.btn_en);
+        Button cn = findViewById(R.id.btn_cn);
+        Button fr = findViewById(R.id.btn_fr);
 
         es.setOnClickListener(view -> {
 
             lang.updateResource("es");
             recreate();
+
         });
+        en.setOnClickListener(view -> {
+
+            lang.updateResource("en");
+            recreate();
+        });
+        cn.setOnClickListener(view -> {
+
+            lang.updateResource("zh");
+            recreate();
+        });
+        fr.setOnClickListener(view -> {
+
+            lang.updateResource("fr");
+            recreate();
+        });
+
+
     }
 
 

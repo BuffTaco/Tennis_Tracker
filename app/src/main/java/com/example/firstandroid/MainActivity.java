@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Snackbar.make(view, "Place camera within tennis court to set parameters, then press “Start” to run the app and set the court dimensions.", Snackbar.LENGTH_LONG)
+                String str = getResources().getString(R.string.help_info);
+                Snackbar.make(view, str, Snackbar.LENGTH_LONG)
                         .setAnchorView(R.id.fab)
                         .setAction("Action", null).show();
 
@@ -68,9 +69,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void showSettings(MenuItem item) {
 
-        Intent intent = new Intent(MainActivity.this,Pop.class);
-        startActivity(intent);
 
+        startActivity(new Intent(MainActivity.this,Pop.class));
 
     }
 

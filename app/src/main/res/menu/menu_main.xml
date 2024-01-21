@@ -9,6 +9,7 @@
         android:onClick="showSettings"
         android:orderInCategory="101"
         android:title="@string/settings"
+        android:icon="@drawable/settings"
 
         app:showAsAction="always" />
 </menu>

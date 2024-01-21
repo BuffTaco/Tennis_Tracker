@@ -13,4 +13,6 @@
     <string name="lorem_ipsum">
         Rastreador de tenis
     </string>
+    <string name="help_info">
+        Coloque la cámara frente a la cancha de tenis para configurar los perímetros, luego presione "Empezar" para ejecutar la aplicación y configurar las dimensiones de la cancha.</string>
 </resources>

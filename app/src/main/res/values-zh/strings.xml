@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">First Android</string>
+    <string name="help">帮助</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">菜单</string>
+    <string name="second_fragment_label">比赛</string>
+    <string name="next">开始</string>
+    <string name="previous">返回</string>
+    <string name="settings">
+        设置
+    </string>
+    <string name="lorem_ipsum">
+        网球跟踪器
+    </string>
+    <string name="help_info">
+        将摄像机放置在网球场内以设置参数，然后按下“开始”运行应用程序并设置球场尺寸。</string>
+</resources>

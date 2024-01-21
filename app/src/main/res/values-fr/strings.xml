@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">First Android</string>
+    <string name="help">Aide</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Menu</string>
+    <string name="second_fragment_label">Match</string>
+    <string name="next">Démarrer</string>
+    <string name="previous">Précédent</string>
+    <string name="settings">
+        Réglage
+    </string>
+    <string name="lorem_ipsum">
+        Tracker de tennis
+    </string>
+    <string name="help_info">
+        Orientez la caméra vers le court de tennis pour définir les paramètres, puis appuyez sur « Démarrer » pour exécuter l\'application et définir les dimensions du terrain.</string>
+
+</resources>

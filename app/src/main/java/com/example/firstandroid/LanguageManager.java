@@ -19,6 +19,8 @@ public class LanguageManager {
         Configuration configuration = resources.getConfiguration();
         configuration.setLocale(locale);
         resources.updateConfiguration(configuration, resources.getDisplayMetrics());
+
+
     }
 
 }
